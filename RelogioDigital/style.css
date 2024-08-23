@@ -1,0 +1,128 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'fontedigital' ;
+    src: url(fonte/DS-DIGI.TTF);
+}
+body{
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+    background-color: cadetblue;
+}
+
+.container1{
+    background-color: #121210;
+    width: fit-content;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgb(34, 32, 32);
+    color: rgb(27, 18, 11);
+    
+    
+}
+.container2{
+    background-color: #343637;
+    width: fit-content;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 1px 2px 20px rgb(48, 47, 47);
+}
+.container3{
+    background-color: #4f6b5b;
+    width: 650px;
+    height: 250px;
+    border-radius: 30px;
+    border: 2px solid #171818 ;
+    box-shadow: 5px 10px 15px;
+    display: flex;
+    display: flex;
+    justify-content: end;
+    
+}
+#turno{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    justify-content: center;
+    align-items:center;
+    font-family: "fontedigital";
+    font-weight: bold;
+    
+}
+
+#containerOpcoes{
+    padding-top: 30px;
+    align-content:space-between ;
+    display: flex;
+    font-family: 'fontedigital';
+    width: 150px;
+    padding: 35px 5px;
+    
+}
+.relogio{
+    display: flex;
+    position: relative;
+    width: fit-content;
+    font-size: 30px;
+    font-size-adjust: 4.9;
+    height:fit-content;
+    font-family: 'fontedigital';
+}
+
+#containerData{
+    display: flex;
+}
+#containerData :nth-child(1){
+    
+    border-bottom:1px solid;
+    
+
+}
+#containerData :nth-child(2){
+    
+    border-bottom:1px solid ;
+
+}
+#containerSegundos :nth-child(1){
+    border-bottom:1px solid;
+    
+    
+}
+#containerSegundos :nth-child(2){
+    border-bottom:1px solid;
+}
+
+#mes, #dia, #segundos, #doispontossegundos{
+    text-align: center;
+    font-size: 60px;
+}
+
+
+#containerSegundos{
+    display: flex;
+    justify-content: left;
+}
+#iconeAlarme{
+    font-size: 15px;
+    margin-top: 5px;
+}
+.blink {
+animation: blink 1s steps(1, end) infinite;
+}
+
+@keyframes blink {
+0% {
+    opacity: 1;
+}
+50% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
+}
